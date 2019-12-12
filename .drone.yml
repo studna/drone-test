@@ -1,0 +1,14 @@
+---
+kind: pipeline
+type: docker
+name: default
+
+platform:
+  arch: amd64
+  os: linux
+
+steps:
+- name: build
+  image: node
+  commands:
+  - node -v
